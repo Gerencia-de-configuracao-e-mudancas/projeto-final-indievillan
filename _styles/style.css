@@ -19,6 +19,7 @@
     --grey-color:                   #fcfeff;
     --title-color:                  #565758;
     --p-color:                      #717275;
+    --bg-color:                     #06071B;
     --footer-bg-color:              #11072e;
   
     --body-font-family:             Arial, Helvetica, sans-serif;
@@ -122,6 +123,11 @@ b, strong {
     margin-right: 12px;
 }
 
+button:focus:not(:focus-visible) {
+    border-color: transparent;
+    box-shadow: none;
+}  
+
 
 /* HERO */
 
@@ -138,8 +144,8 @@ b, strong {
 
 #banner {
     position: absolute;
-    min-height: 300px;
-    height: 50vh;
+    max-height: 50vh;
+    max-width: 100%;
 }
  
 @media screen and (min-width: 991px) {
@@ -386,111 +392,111 @@ b, strong {
 
 @media screen and (max-width: 991px) {
     body {
-      padding-top: 80px;
+        padding-top: 80px;
     }
   
     h1 {
-      font-size: 48px;
+        font-size: 48px;
     }
   
     h2 {
-      font-size: 36px;
+        font-size: 36px;
     }
   
     h3 {
-      font-size: 32px;
+        font-size: 32px;
     }
   
     h4 {
-      font-size: 28px;
+        font-size: 28px;
     }
   
     h5 {
-      font-size: 20px;
+        font-size: 20px;
     }
   
     h6 {
-      font-size: 18px;
+        font-size: 18px;
     }
       
     .section-padding {
-      padding-top: 80px;
-      padding-bottom: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
   
     .custom-btn {
-      font-size: var(--copyright-text-font-size);
-      padding: 8px 16px;
+        font-size: var(--copyright-text-font-size);
+        padding: 8px 16px;
     }
   
     .navbar {
-      background: var(--white-color);
-      padding-top: 5px;
-      padding-bottom: 5px;
+        background: var(--white-color);
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
   
     .navbar-expand-lg .navbar-nav .nav-link {
-      padding-left: 0;
+        padding-left: 0;
     }
   
     .navbar-brand {
-      color: var(--dark-color);
+        color: var(--dark-color);
     }
   
     .navbar-nav .nav-link {
-      color: var(--p-color);
-      padding-top: 5px;
-      padding-bottom: 5px;
+        color: var(--p-color);
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
   
     .site-footer {
-      padding-top: 70px;
-      padding-bottom: 50px;
+        padding-top: 70px;
+        padding-bottom: 50px;
     }
   
     .site-footer-bottom,
     .site-footer .social-icon {
-      text-align: center;
+        text-align: center;
     }
   }
   
-  @media screen and (max-width: 580px) {
+@media screen and (max-width: 580px) {
     h1 {
-      font-size: 36px;
+        font-size: 36px;
     }
   
     h2 {
-      font-size: 32px;
+        font-size: 32px;
     }
   
     .paddingText {
-      padding: 25px;
+        padding: 25px;
     }
   
     .pricing-plan {
-      padding: 60px 30px 20px 30px;
+        padding: 60px 30px 20px 30px;
     }
   
     .pricing-header {
-      padding-bottom: 20px;
+        padding-bottom: 20px;
     }
   
     .pricing-body {
-      margin-top: 30px;
-      margin-right: 0;
-      margin-left: 0;
+        margin-top: 30px;
+        margin-right: 0;
+        margin-left: 0;
     }
   }
   
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .pricing-name,
     .pricing-price {
-      margin-bottom: 0;
+        margin-bottom: 0;
     }
   
     .pricing-price {
-      max-width: 45px;
-      margin-right: auto;
+        max-width: 45px;
+        margin-right: auto;
     }
   }
 
