@@ -4,40 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_styles/style.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="_styles/bootstrap.min.css">
+    <link rel="shortcut icon" href="_imagens/indievillan-logo.png" type="image/x-icon">
     <title>IndieVillan - Home</title>
 </head>
 <body>
     <header>
-    <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container">
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container">
 
-            <a href="index.php" class="navbar-brand">
-                <img class="bi-layers" src="_imagens/" width="70px"> IndieVillan
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <a href="index.html" class="navbar-brand">
+                    <img class="bi-layers" src="_imagens/indievillan_logo-fundo.png" width="70px"> IndieVillan
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-lg-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#index">Inicío</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#index">Inicío</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#sobre-nos">Sobre nós</a>
+                        </li>
+                    </ul>
+                    <div class="ms-auto d-none d-lg-block">
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </header>
     <main>
-        <article id="index">
-            <section>
-            </section>
-        </article>
+        <section class="hero d-flex justify-content-center align-items-center" id="index">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12">
+                        <div class="heroText">
+                            <h1 class="text-white mb-lg-5 mb-4">IndieVillan: Nossa ideia. Seu jogo.</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="overlay"></div>
+        </section>
+        <section class="about section-padding" id="sobre-nos">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="mb-5">Desenvolvimento Digital</h2>
+                    </div>
+
+                    <div class="col-lg-4 col-12 ms-lg-auto mb-5 mb-lg-0">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-intro-tab" data-bs-toggle="tab" data-bs-target="#nav-intro" type="button" role="tab" aria-controls="nav-intro" aria-selected="true">Introdução</button>
+
+                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Nosso perfil</button>
+
+                                <button class="nav-link" id="nav-faq-tab" data-bs-toggle="tab" data-bs-target="#nav-faq" type="button" role="tab" aria-controls="nav-faq" aria-selected="false">FAQs</button>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-intro" role="tabpanel" aria-labelledby="nav-intro-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                                        <img src="_imagens/" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-5 col-12 m-auto">
+                                        <h3 class="mb-3">Sobre Nós</h3>
+
+                                        <p>Nossa empresa tem como objetivo facilitar as tarefas diárias das pessoas. A Lunaris está pronta para servir os melhores serviços de criação, desenvolvimento e manutenção para a melhoria da sua qualidade de vida.</p>
+
+                                        <p>Dentre os serviços que a empresa oferece, muitos deles estão em alta demanda no mercado. Para isso, a nossa agência trabalha com uma equipe de profissionais qualificados para trazer ao cliente o serviço com qualidade, segurança e garantia.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-lg-5 col-12 m-auto">
+                                        <h3 class="mb-3">Pedro G. H. Andrade, CEO</h3>
+
+                                        <p>Nossa prioridade é a sua felicidade trabalhando junto conosco. Garantimos-lhe a melhor qualidade de serviço da nossa parte. Sinta-se à vontade para falar conosco por e-mail, twitter ou LinkedIn.</p>
+
+                                        <ul class="social-icon mt-lg-5 mt-3">
+                                            <li class="me-3"><strong>Onde nos procurar?</strong></li>
+
+                                            <li><a href="https://twitter.com/search?q=tooplate" class="social-icon-link bi-twitter"></a></li>
+
+                                            <li><a href="#" class="social-icon-link bi-linkedin"></a></li>
+
+                                            <li><a href="#" class="social-icon-link bi-envelope"></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mt-lg-0 mt-4">
+                                        <img src="_imagens/ceo.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-faq" role="tabpanel" aria-labelledby="nav-faq-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                                        <img src="_imagens/php-programming-html-coding-cyberspace-concept.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-5 col-12 m-auto">
+                                        <h3 class="mb-3">Perguntas Frequentes</h3>
+
+                                        <div class="accordion" id="accordionGeneral">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne" aria-expanded="true" aria-controls="accordionGeneralOne">
+                                                    O que é a Lunaris?
+                                                    </button>
+                                                </h2>
+
+                                                <div id="accordionGeneralOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionGeneral">
+
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph"><strong>Lunaris</strong> é uma empresa fornecedora de serviços envolventes das tecnologias como a inteligência artificial (IA), automação geral, desenvolvimento de sites e dentre outros diversos serviços.</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo" aria-expanded="false" aria-controls="accordionGeneralTwo">
+                                                    Quais serviços são oferecidos pela Lunaris?
+                                                    </button>
+                                                </h2>
+
+                                                <div id="accordionGeneralTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionGeneral">
+
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph">A Lunaris oferece diversos serviços de tecnologia. Dentre os principais serviços temos: Automação, Desenvolvimento de Sites, Criação de uma Rede Neural Artificial, projetos de Ciência de Dados, Criação de Logomarcas e dentre outros diversos projetos.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralThree" aria-expanded="false" aria-controls="accordionGeneralThree">
+                                                    Além da criação, a Lunaris oferece manutenção para os serviços que foram feitos?
+                                                    </button>
+                                                </h2>
+
+                                                <div id="accordionGeneralThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionGeneral">
+
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph">Sim, nós temos a disponibilidade de um serviço de manutenção e suporte para os clientes que fizeram o seu pedido de algum outro serviço que envolva a criação e desenvolvimento. Basta clicar no link abaixo para saber mais sobre o serviço.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p></p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-5 col-12 me-auto mb-4">
+                    <h5 class="text-white mb-3">Nossos Jogos</h5>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Helva: EoLP</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-12 me-auto mb-4">
+                    <h5 class="text-white mb-3">Diga Olá</h5>
+
+                    <p class="text-white mb-1">Paraíba, Brasil</p>
+
+                    <p><a href="mailto:indievillan@gmail.com" class="footer-link">indievillan@gmail.com</a><p>
+                </div>
+
+                <div class="site-footer-bottom mt-5">
+                    <div class="row pt-4">
+                        <div class="col-lg-6 col-12">
+                            <p class="copyright-text tooplate-link">Copyright © 2025 IndieVillan.
+                        </div>
+
+                        <div class="col-lg-3 col-12 ms-auto">
+                            <ul class="social-icon">
+                                <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+
+                                <li><a href="https://twitter.com/search?q=tooplate" class="social-icon-link bi-twitter"></a></li>
+
+                                <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                                <li><a href="#" class="social-icon-link bi-linkedin"></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </footer>
+    
+    <!-- Scripts para o NAV -->
+    <script src="_scripts/jquery.min.js"></script>
+    <script src="_scripts/custom.js"></script>
+    <!-- Script principal -->
     <script src="_scripts/script.js"></script>
+    <!-- Bootstrap básico -->
+    <script src="_scripts/bootstrap.min.js"></script>
 </body>
 </html>
