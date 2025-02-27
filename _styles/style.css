@@ -142,6 +142,7 @@ button:focus:not(:focus-visible) {
     z-index: 2;
 }
 
+
 #banner {
     position: absolute;
     max-height: 50vh;
@@ -163,6 +164,7 @@ button:focus:not(:focus-visible) {
     bottom: 0;
     left: 0;
     pointer-events: none;
+    overflow: hidden;
 }
   
 .overlay.dark-overlay {
@@ -304,6 +306,29 @@ button:focus:not(:focus-visible) {
 
 .navbar-toggler .navbar-toggler-icon::after {
     top: 8px;
+}
+
+/* slides */
+
+.slides {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    display: none;
+    margin-left: 20%;
+}
+
+.slide img {
+    height: 50vh;
+}
+
+.slide.first {
+    display: flex;
 }
 
 /* FOOTER */
