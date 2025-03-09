@@ -135,6 +135,7 @@ button:focus:not(:focus-visible) {
     padding-top: 120px;
     padding-bottom: 60px;
     position: relative;
+    background-color: var(--bg-color);
 }
   
 .heroText {
@@ -329,6 +330,11 @@ button:focus:not(:focus-visible) {
 
 .slide.first {
     display: flex;
+}
+
+.text-justify {
+    text-align: justify;
+    hyphens: auto;
 }
 
 /* FOOTER */
