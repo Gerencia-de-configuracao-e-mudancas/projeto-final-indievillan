@@ -1,133 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieVillan - Home</title>
     <link rel="stylesheet" href="_styles/style.css">
     <link rel="stylesheet" href="_styles/bootstrap.min.css">
+    <link rel="stylesheet" href="_styles/bootstrap-icons.css"> <!-- Inclua o bootstrap-icons.css -->
     <link rel="shortcut icon" href="_imagens/indievillan-logo.png" type="image/x-icon">
-    <title>IndieVillan - Home</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container">
-
                 <a href="index.html" class="navbar-brand">
-                    <img class="bi-layers" src="_imagens/indievillan_logo-fundo.png" width="70px"> IndieVillan
+                    <img class="bi-layers" src="_imagens/indievillan_logo-fundo.png" width="70px"
+                        alt="Logo da IndieVillan"> IndieVillan
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir/Fechar Menu de Navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-lg-5">
                         <li class="nav-item">
-                            <a class="nav-link" href="#index">Inicío</a>
+                            <a class="nav-link" href="#index">Início</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#sobre-nos">Sobre nós</a>
                         </li>
                     </ul>
-                    <div class="ms-auto d-none d-lg-block">
-                    </div>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
         <section class="hero d-flex justify-content-center align-items-center" id="index">
             <div class="container">
                 <div class="row">
-
-                    <!-- <div class="col-lg-8 col-12">
+                    <div class="col-lg-8 col-12">
                         <div class="heroText">
                             <h1 class="text-white mb-lg-5 mb-4">IndieVillan: Nossa ideia. Seu jogo.</h1>
                         </div>
-                    </div> -->
-
-                </div>
-            </div>
-            <!-- Isso é para o slide de imagens no topo do site -->
-            <div class="overlay d-flex justify-content-center align-items-center">
-                <div class="slides">
-                    <div class="slide first">
-                        <img src="_imagens/slide/helva.png">
-                    </div>
-                    <div class="slide">
-                        <img src="_imagens/slide/new-logo-centro.png">
                     </div>
                 </div>
             </div>
-            <!---------------------------------------------------->
-        </section>
-        <section class="about section-padding" id="sobre-nos">
-            <h2 class="ms-2">Sobre nós</h2>
-            <div class="d-flex flex-row">
-                <p class="ms-5 mt-3 me-5 text-justify">
-                    A IndieVillan nasceu da união de 6 amigos da faculdade, apaixonados por jogos e desenvolvimento. Decidimos transformar essa paixão em realidade e fundamos a empresa com um objetivo claro: criar jogos que divirtam e marquem a vida das pessoas. <br> <br>
-                    Nosso primeiro grande desafio foi participar de um Game Dev Quest para conseguir o capital necessário para a IndieVillan. Chegamos perto, mas não conseguimos a vitória. Apesar do resultado, a experiência nos ensinou muito e serviu como um combustível para seguirmos em frente, ainda mais determinados a alcançar o sucesso. <br> <br>
-                
-                    Somos um time que acredita na colaboração, na criatividade e na busca constante por inovação. Nosso objetivo é continuar evoluindo, aprendendo com cada projeto e entregando jogos de alta qualidade que proporcionem experiências únicas para nossos jogadores. <br> <br>
-                
-                    Acompanhe nossa jornada e descubra o que a IndieVillain está preparando para o futuro!</p>
-                    <img class="bi-layers rounded me-5" src="_imagens/indievillan_logo-fundo.png" width="500px">
+
+            <!-- Implementação do carrossel com JavaScript -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="_imagens/slide/helva.png" class="d-block w-100" alt="Imagem do jogo Helva">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="_imagens/slide/new-logo-centro.png" class="d-block w-100" alt="Logo da IndieVillan">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
+
         </section>
 
+        <article class="about section-padding" id="sobre-nos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h3>Sobre nós</h3>
+                        <p class="mt-3 text-justify">
+                            A IndieVillan nasceu da união de 6 amigos da faculdade, apaixonados por jogos e
+                            desenvolvimento. Decidimos transformar essa paixão em realidade e fundamos a empresa com um
+                            objetivo claro: criar jogos que <strong>divirtam</strong> e <em>marquem</em> a vida das
+                            pessoas. <br><br>
+                            Nosso primeiro grande desafio foi participar de um Game Dev Quest para conseguir o capital
+                            necessário para a IndieVillan. Chegamos perto, mas não conseguimos a vitória. Apesar do
+                            resultado, a experiência nos ensinou muito e serviu como um combustível para seguirmos em
+                            frente, ainda mais determinados a alcançar o sucesso. <br><br>
+                            Somos um time que acredita na colaboração, na criatividade e na busca constante por
+                            inovação. Nosso objetivo é continuar evoluindo, aprendendo com cada projeto e entregando
+                            jogos de alta qualidade que proporcionem experiências únicas para nossos jogadores. <br><br>
+                            Acompanhe nossa jornada e descubra o que a IndieVillain está preparando para o futuro!
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <figure>
+                            <img class="img-fluid rounded" src="_imagens/indievillan_logo-fundo.png"
+                                alt="Logo da IndieVillan">
+                            <figcaption>Logo da IndieVillan</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </article>
     </main>
+
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-5 col-12 me-auto mb-4">
                     <h5 class="text-white mb-3">Nossos Jogos</h5>
-
                     <ul class="footer-menu">
                         <li class="footer-menu-item"><a href="#" class="footer-menu-link">Helva: EoLP</a></li>
+                        <!-- Adicione mais jogos aqui -->
                     </ul>
                 </div>
 
                 <div class="col-lg-5 col-12 me-auto mb-4">
                     <h5 class="text-white mb-3">Diga Olá</h5>
-
                     <p class="text-white mb-1">Paraíba, Brasil</p>
-
-                    <p><a href="mailto:indievillan@gmail.com" class="footer-link">indievillan@gmail.com</a><p>
+                    <p><a href="mailto:indievillan@gmail.com" class="footer-link">indievillan@gmail.com</a></p>
                 </div>
 
-                <div class="site-footer-bottom mt-5">
-                    <div class="row pt-4">
-                        <div class="col-lg-6 col-12">
-                            <p class="copyright-text tooplate-link">Copyright © 2025 IndieVillan.
-                        </div>
-
-                        <div class="col-lg-3 col-12 ms-auto">
-                            <ul class="social-icon">
-                                <li><a href="#" class="social-icon-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
-
-                                <li><a href="#" class="social-icon-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-
-                                <li><a href="#" class="social-icon-link"><ion-icon name="logo-tiktok"></ion-icon></a></li>
-
-                            </ul>
-                        </div>
+                <div class="col-lg-12 col-12">
+                    <div class="site-footer-bottom mt-5 text-center">
+                        <p class="copyright-text">Copyright © 2025 IndieVillan.</p>
+                        <ul class="social-icon">
+                            <li><a href="#" class="social-icon-link" aria-label="Link para o Youtube"><i
+                                        class="bi bi-youtube"></i></a></li>
+                            <li><a href="#" class="social-icon-link" aria-label="Link para o Instagram"><i
+                                        class="bi bi-instagram"></i></a></li>
+                            <li><a href="#" class="social-icon-link" aria-label="Link para o TikTok"><i
+                                        class="bi bi-tiktok"></i></a></li>
+                        </ul>
                     </div>
                 </div>
 
             </div>
         </div>
     </footer>
-    
-    <!-- Scripts para o NAV -->
+
+    <!-- JAVASCRIPT -->
     <script src="_scripts/jquery.min.js"></script>
-    <script src="_scripts/custom.js"></script>
-    <!-- Script do slide da página -->
-    <script src="_scripts/script-slide.js"></script>
-    <!-- Bootstrap básico -->
     <script src="_scripts/bootstrap.min.js"></script>
-    <!-- Icones do site -->
+    <!-- Inclua aqui uma biblioteca de carrossel, como Splide.js -->
+    <script src="_scripts/custom.js"></script>
+    <!-- <script src="_scripts/script-slide.js"></script> REMOVIDO -->
+    <!-- Ícones (mantidos no head para carregamento antecipado) -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
